@@ -1,0 +1,17 @@
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Go build output (binary files), not the folder
+*.exe
+*.out
+*.test
+*.bin
+
+# Ignore build artifacts inside api-contact-form (if any)
+api-contact-form/bin/
+api-contact-form/build/
+api-contact-form/tmp/
