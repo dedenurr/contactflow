@@ -1,8 +1,9 @@
 package handlers
 
 import (
-	"api-contact-form/responses"
 	"net/http"
+
+	"github.com/dedenurr/contactflow/api-contact-form/responses"
 
 	"github.com/gin-gonic/gin"
 )

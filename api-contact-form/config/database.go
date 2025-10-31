@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/dedenurr/contactflow/api-contact-form/models"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
@@ -48,7 +49,7 @@ func InitDB(){
 	sqlDB.SetConnMaxLifetime(time.Hour) // maximum amount of time a connection may be reused
 
 	// auto-migrate the Contact model to create/update the database table
-	if err := DB.AutoMigrate(&model.Contact{}); err != nil {
+	if err := DB.AutoMigrate(&models.Contact{}); err != nil {
 		panic(fmt.Sprintf("Failed to auto-migrate database: %v", err))
 	}
 }

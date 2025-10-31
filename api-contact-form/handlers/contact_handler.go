@@ -1,11 +1,13 @@
 package handlers
 
 import (
-	"api-contact-form/requests"
-	"api-contact-form/responses"
-	"api-contact-form/services"
 	"net/http"
 	"strconv"
+
+	"github.com/dedenurr/contactflow/api-contact-form/services"
+
+	"github.com/dedenurr/contactflow/api-contact-form/requests"
+	"github.com/dedenurr/contactflow/api-contact-form/responses"
 
 	"github.com/gin-gonic/gin"
 )

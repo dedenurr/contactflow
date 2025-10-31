@@ -1,4 +1,4 @@
-module api-contact-form
+module github.com/dedenurr/contactflow
 
 go 1.25.3
 
