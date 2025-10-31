@@ -1,6 +1,9 @@
 package responses
 
-import "github.com/dedenurr/contactflow/api-contact-form/models"
+import (
+	"github.com/dedenurr/contactflow/api-contact-form/helpers"
+	"github.com/dedenurr/contactflow/api-contact-form/models"
+)
 
 type APIResponse struct {
 	Code string `json:"code"`
